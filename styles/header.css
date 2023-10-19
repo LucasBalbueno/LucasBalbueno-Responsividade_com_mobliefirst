@@ -1,0 +1,110 @@
+.cabecalho__menu-hamburguer{
+    width: 24px;
+    height: 24px;
+    background-image: url(../imgs/Menu.svg);         /*AQUI SERÁ UMA IMAGEM BG PARA NÃO COLOCAR UMA IMAGEM NO HTML*/
+    background-repeat: no-repeat;                    /*PARA NÃO REPETIR A IMAGEM BG*/
+    background-position: center;                     /*PARA CENTRALIZAR A IMAGEM BG*/
+    display: inline-block;                           /*DISPLAY INLINE PODENDO ALTERAR WIDTH E HEIGHT*/
+}
+
+.cabecalho {
+    background-color: var(--branco-secundario);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;        /*A POSIÇÃO É RELATIVA POIS O SEU ELEMENTO FILHO (O MENU) TEM POSIÇÃO ABSOLUTE, LOGO PARA O MENU TER UMA POSIÇÃO DEFINIDA EM RELAÇÃO AO CABEÇARIO (ELEMENTO PAI), O ELEMENTO PAI DEVE TER POSTIION DIFERENTE DE STATIC (PADRÃO)*/
+}
+
+.container {
+    display: flex;
+    align-items: center;
+}
+
+.container__imagem {
+    padding: 1em;               /*AO SETAR PADDING PARA OS ELEMENTOS DO HEADER, A ALTURA E LARGURA DO HEADER TAMBÉM SE AJUSTA POR SEREM ELEMENTOS FILHOS DA CLASSE DO HEADER*/
+}
+
+.lista__menu {
+    display: none;             /*O ELEMENTO LISTA DESAPARECE E NÃO OCUPA ESPAÇO NENHUM*/
+    position: absolute;        /*SE POSICIONA EM RELAÇÃO AO ELEMENTO PAI*/
+    top: 110%;         
+    background-color: var(--branco-secundario);
+    width: 60vw;
+}
+
+.container__botao {                /*CLASS DO CHECKBOX COM DISPLAY NONE PARA QUE O CHECKBOX NÃO APAREÇA*/
+    display: none;
+}
+
+.container__botao:checked~.lista__menu {       /*PARA QUE O CHECKBOX APAREÇA APENAS QUANDO CLICADO, USAMOS UMA PSEUDO CLASSE EM .container__botao E VINCULAMOS A SUA ALTERAÇÃO PARA A CLASSE .lista__menu ATRAVÉS DA SINTAXE DE VINCULAÇÃO "~". O ~ vincula as duas class*/
+    display: block;
+}
+
+.lista__menu-title {
+    font-weight: 700;
+    color: var(--amarelo-secundario);
+    padding: 1em 0 1em 1em;
+}
+
+.lista__menu-item {
+    padding: 1em 0 1em 1em;
+}
+
+.lista__menu-link {
+    color: var(--azul-botaomenu);
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.logo__title {
+    display: none;
+}
+
+.cabecalho__menus {
+    display: none;
+}
+
+@media screen and (min-width: 1024px) {
+    .logo__title, .logo__title-negrito {
+        font-family: var(--fonte-logo);
+        font-size: 36px;
+    }
+
+    .logo__title {
+        font-weight: 400;
+        display: block;
+        margin-left: 0.5em;
+    }
+
+    .logo__title-negrito {
+        font-weight: 700;
+    }
+
+    .cabecalho__menus {
+        display: flex;
+    }
+
+    .cabecalho__botao {
+        padding: 0 1em;
+        text-transform: uppercase;
+    }
+
+    .cabecalho__link {
+        text-decoration: none;
+        font-family: var(--fonte-principal);
+        font-weight: 400;
+        color: var(--preto-rodape)
+    }
+
+    .botao__favoritos {
+        display: none;
+    }
+
+    .cabecalho__menu-hamburguer {
+        display: none;
+    }
+
+    .logo__img {
+        margin-left: 1em ;
+    }
+}

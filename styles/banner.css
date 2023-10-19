@@ -1,0 +1,37 @@
+.banner {
+    background: var(--azul-degrade);
+    padding: 2em 2em;             /*PADDING A PARTIR DOS ELEMENTOS FILHO*/
+    text-align: center;
+    color: var(--branco-fundo);
+}
+
+.banner__title {
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.banner__text {
+    margin: 2em;
+    font-weight: 500;
+}
+
+.banner__pesquisa {
+    background: transparent;
+    border: 1px solid var(--branco-fundo);
+    color: var(--branco-fundo);                /*COR DA ESCRITA DO USUÁRIO*/
+    border-radius: 1.5em;
+    padding: 1em;
+    width: 100%;
+}
+
+.banner__pesquisa::placeholder {
+    color: var(--branco-fundo);
+    text-align: center;
+    font-family: var(--fonte-principal);
+    font-size: 14px;
+    font-weight: 400px;
+    background: url(../imgs/Lupa.svg);
+    background-repeat: no-repeat;
+    background-position: 1em;
+    padding-left: 2em;        /* DEIXAR O TEXTO MAIS PARA A ESQUERDA, PARA NÃO COLAR NA LUPA*/
+}
