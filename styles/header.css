@@ -107,4 +107,18 @@
     .logo__img {
         margin-left: 1em ;
     }
+
+    .checkbox__botao:checked ~ .lista__menu{
+        display: block;
+        width: 10em;
+    }
+
+    .lista__menu-item:hover {
+        background: var(--azul-degrade);
+        color: var(--branco-secundario);
+    }
+
+    .checkbox__botao {
+        display: none;
+    }
 }
