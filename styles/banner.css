@@ -35,3 +35,17 @@
     background-position: 1em;
     padding-left: 2em;        /* DEIXAR O TEXTO MAIS PARA A ESQUERDA, PARA NÃO COLAR NA LUPA*/
 }
+
+@media screen and (min-width: 1024px) {
+    .banner__title {
+        font-size: 36px;
+    }
+
+    .banner__pesquisa {
+        width: 40%;
+    }
+
+    .banner__pesquisa::placeholder{
+        background-position: 3em;
+    }
+}
