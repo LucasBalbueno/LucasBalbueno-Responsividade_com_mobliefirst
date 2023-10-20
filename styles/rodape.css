@@ -6,3 +6,7 @@
 .rodape__texto {
     color: var(--preto-rodape);
 }
+
+@media screen and (min-width: 1024px) {
+    
+}
