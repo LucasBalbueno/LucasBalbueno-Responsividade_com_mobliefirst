@@ -68,6 +68,14 @@
     display: none;
 }
 
+.container__botao:checked ~ .container__menu > .cabecalho__menu-hamburguer {
+    background-image: url(../imgs/Menu\ Aberto.svg);
+}
+
+.container__botao:checked ~ .container__menu {
+    background: var(--azul-degrade);
+}
+
 @media screen and (min-width: 1024px) {
     .logo__title, .logo__title-negrito {
         font-family: var(--fonte-logo);
@@ -124,6 +132,15 @@
 
     .checkbox__botao {
         display: none;
+    }
+
+    .checkbox__botao:checked ~ .container__menu>.cabecalho__botao {
+        background: var(--azul-degrade);
+        color: var(--branco-secundario);
+    }
+
+    .cabecalho__botao{
+        padding: 2em 1em;
     }
 }
 
