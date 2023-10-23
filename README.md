@@ -2,7 +2,7 @@
 
 Nesse projeto desenvolvi a página Alura Book com foco na sua responsividade para os diferentes tamanhos de telas que o usuário pode usar para acessar.
 
-Comecei desenvolvendo para versão WEB Mobile e depois usei os Media Queries para mudar a estilização e o layout para as telas de Tablet (1024px) e Desktop (1728px).
+Comecei desenvolvendo para versão WEB Mobile e depois usei os Media Queries para mudar a estilização e o layout para as telas de Tablet (1024px) e Desktop (1728px). Essa técnica também é conhecida como "Mobile first".
 
 O projeto foi baseado no curso da Alura.
 
