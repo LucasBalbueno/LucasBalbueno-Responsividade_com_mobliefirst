@@ -10,6 +10,8 @@ Com ele pude praticar e desenvolver meus conhecimentos para criar uma página WE
 
 ## Instruções
 
+Acesse o link do Github Pages: https://lucasbalbueno.github.io/Responsividade_com_mobilefirst/
+
 Use o Dev Tool (CTRL + SHIFT + C) do seu navegador para alterar as dimensões da tela e conseguir navegador pelos detalhes da aplicação.
 
 ## Ferramentas
