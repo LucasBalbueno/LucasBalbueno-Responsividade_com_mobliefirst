@@ -12,10 +12,13 @@ Com ele pude praticar e desenvolver meus conhecimentos para criar uma página WE
 
 Acesse o link do Github Pages: https://lucasbalbueno.github.io/Responsividade_com_mobilefirst/
 
-Use o Dev Tool (CTRL + SHIFT + C) do seu navegador para alterar as dimensões da tela e conseguir navegador pelos detalhes da aplicação.
+Use o Dev Tool (CTRL + SHIFT + C) do seu navegador para alterar as dimensões da tela e conseguir navegar pelos detalhes da aplicação.
+
+__OBSERVAÇÕES:__ Os botões e links estão clicáveis mas não redirecionam para nenhuma outra página.
 
 ## Ferramentas
 
 1. VS Code Studio com extensão do Live Server
 2. Dev Tool do navegador
-3. Figma (Design)
+3. GitHub para controle de versionamento
+4. Figma (Design)
