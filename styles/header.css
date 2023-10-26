@@ -164,4 +164,8 @@
     .cabecalho__menus{
         margin-right: auto;
     }
+
+    .cabecalho__menu-hamburguer {
+        display: none;
+    }
 }
